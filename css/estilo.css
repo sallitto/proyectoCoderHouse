@@ -74,7 +74,6 @@ body {
     color: rgb(140, 148, 145);
     padding-top: 50px;
     font-style: oblique;
-    font-weight: 900px;
     
 }
 
@@ -89,14 +88,13 @@ body {
     margin: 50px;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .opc_nav {
     color: rgb(140, 148, 145);
     text-decoration: none;
     padding: 0.7rem;
-    text-align: center;
 }
 
 .opc_nav:hover {
@@ -107,24 +105,12 @@ body {
 
 /* ----- ESTILO DIV DERECHO ----- */
 .div_der {
-    text-align: center;
     align-content: center;
-}
-
-.p_ciudadelv {
-    padding: 30px;
-    color: rgba(252, 251, 247, 0.788);
 }
 
 /* ----- ESTILO DIV IZQUIERDO ----- */
 .div_izq {
-    text-align: center;
     align-content: center;
-}
-
-.p_ciudadares {
-    padding: 30px;
-    color: rgba(252, 251, 247, 0.788);
 }
 
 /* ----- ESTILO MAIN ----- */
@@ -133,14 +119,11 @@ body {
     justify-content: space-around;
     color: rgb(140, 148, 145);
     padding: 20px;
-    align-items: center;
 }
 
 /* ----- ESTILO FOOTER ----- */
 footer {
     padding-top: 30px;
-    justify-content: space-around;
-    align-items: end;
 }
 
 .h4_contacto {
@@ -163,8 +146,6 @@ footer {
     line-height: 42px;
     margin: 10px 5px;
     font-size: 20px;
-    transition: .3s;
-    ;
 }
 
 .contenido-contacto i:hover {
@@ -182,11 +163,11 @@ footer {
 /* ----- ESTILO COMPONENTES MAIN ( SECCION INDEX ) ----- */
 .div_video {
     text-align: center;
-    align-content: center;
     margin: 50px;
     padding: 10px;
     border:  solid 2px rgb(140, 148, 145);
     border-radius: 5%;
+
 }
 
 .video_index{
@@ -199,7 +180,6 @@ footer {
     margin: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -217,7 +197,6 @@ footer {
 
 /* ----- ESTILO COMPONENTES MAIN ( SECCION COMANDOS ) ----- */
 .div_comandos {
-    text-align: center;
     align-content: center;
     margin-left: 10px;
 }
@@ -272,25 +251,12 @@ th {
     border-color: rgb(140, 148, 145);
 }
 
-.item_mapas {
-    font-size: larger;
-    margin: 5px auto;
-    padding: 4px;
-}
-
 .div_mapas {
 
     height: 450px;
     width: 450px;
     overflow: auto;
     text-align: center;
-}
-
-.a_mapas {
-    color: rgb(140, 148, 145);
-    padding-top: 0;
-    margin: 10px 20px;
-
 }
 
 .img_mapas {
@@ -307,13 +273,8 @@ th {
 
 /* ----- ESTILO COMPONENTES MAIN ( SECCION MONSTERS ) ----- */
 
-.tabla_monsters {
-    border: none;
-}
-
 .div_monsters {
     text-align: center;
-    align-content: center;
 }
 
 .td_monsters {
@@ -329,21 +290,6 @@ th {
 
 /* ----- ESTILO COMPONENTES MAIN ( SECCION REGLAS ) ----- */
 
-/*.lista_reglas {
-    font-family: "Kanit", serif;
-    padding: 1px;
-    margin: 0px auto;
-    text-align: center;
-    list-style: none;
-}
-
-.nombre_regla {
-    text-decoration: underline;
-}
-
-.lista_items{
-   text-align: center;
-}*/
 
 .item_regla {
     font-family: "Nunito", serif;
@@ -383,22 +329,51 @@ th {
 
 @media screen and (max-width: 1399px){
 
-    .main {
+    .container_gral {
+        height: 80vh;
         display: grid;
-        color: rgb(140, 148, 145);
-        padding: 20px;
+        grid-template-columns: 0.1fr 3fr 0.1fr; 
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header header header"
+            "div_izq nav div_der"
+            "main main main"
+            "footer footer footer";
     }
 
-    .div_listmaps {
+    .nav_menu {
+        margin: 100px;
         display: flex;
-        align-content: center;
+        list-style: none;
         justify-content: space-between;
-        padding: 20px;
     }
     
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 1199px){
+
+    .container_gral {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 0.1fr 3fr 0.1fr; 
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header header header"
+            "div_izq nav div_der"
+            "main main main"
+            "footer footer footer";
+    }
+
+    .nav_menu {
+        margin: 100px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
 
     .main {
         display: grid;
@@ -413,12 +388,64 @@ th {
         padding: 20px;
     }
 
-    .img_der{
-        width: 100px;
+    .div_video {
+        border: none; 
+    }
+   
+}
+
+@media screen and (max-width: 991px){
+
+    .container_gral {
+        height: 80vh;
+        display: grid;
+        grid-template-columns: 0.1fr 3fr 0.1fr; 
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header header header"
+            "div_izq nav div_der"
+            "main main main"
+            "footer footer footer";
+    }
+
+    .nav_menu {
+        margin: 100px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .div_video {
+        border: none; 
     }
 
     .img_izq{
-        width: 100px;
+        height: 150px;
     }
-    
+
+    .img_der{
+        height: 150px;
+    }
+
+    .img_logo {
+
+        padding-top: 20px;
+        height: 130px;
+    }
+   
 }
