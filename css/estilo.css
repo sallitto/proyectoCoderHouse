@@ -22,7 +22,7 @@ body {
 .container_gral {
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.1fr 3fr 0.1fr; 
+    grid-template-columns: 0.1fr 3fr 0.1fr;
     grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
     grid-auto-columns: 1fr;
     gap: 5px 5px;
@@ -35,32 +35,32 @@ body {
 
 .header {
     grid-area: header;
-    background-color: rgba(255,255,255,0)
+    background-color: rgba(255, 255, 255, 0)
 }
 
 .div_izq {
     grid-area: div_izq;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .nav_gral {
     grid-area: nav;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .div_der {
     grid-area: div_der;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .main {
     grid-area: main;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgba(255,255,255,0)
+    background-color: rgba(255, 255, 255, 0)
 }
 
 /* ----- ESTILO HEADER ----- */
@@ -70,12 +70,12 @@ body {
     align-items: center;
 }
 
-.titulo{
+.titulo {
     font-family: "Rubik Wet Paint", system-ui;
     color: rgb(140, 148, 145);
     padding-top: 50px;
     font-style: oblique;
-    
+
 }
 
 .img_logoIzq {
@@ -89,6 +89,7 @@ body {
     padding-top: 10px;
     height: 150px;
 }
+
 /* ----- ESTILO NAV ----- */
 .nav_menu {
     margin: 20px;
@@ -179,7 +180,7 @@ footer {
 
 }
 
-.video_index{
+.video_index {
     border-radius: 5%;
 }
 
@@ -320,13 +321,13 @@ th {
 .accordion-item {
     align-items: center;
     color: rgb(140, 148, 145);
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
     border: none;
 }
 
 .accordion-button {
     color: rgba(7, 7, 7, 0.932);
-    background-color:  rgb(140, 148, 145);
+    background-color: rgb(140, 148, 145);
     border: none;
 }
 
@@ -338,12 +339,12 @@ th {
 
 /* ----- MEDIA QUERIES ----- */
 
-@media screen and (max-width: 1399px){
+@media screen and (max-width: 1399px) {
 
     .container_gral {
-        height: 80vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -360,13 +361,13 @@ th {
         align-items: center;
         align-content: center;
     }
-    
-    .titulo{
+
+    .titulo {
         font-family: "Rubik Wet Paint", system-ui;
         color: rgb(140, 148, 145);
         padding-top: 10px;
         font-style: oblique;
-        
+
     }
 
     .nav_menu {
@@ -379,17 +380,19 @@ th {
         margin-right: 60px;
     }
 
-    .img_logoIzq{
-        height: 100px;   
-    }
-    .img_logoDer{
+    .img_logoIzq {
         height: 100px;
     }
-    .img_der{
+
+    .img_logoDer {
+        height: 100px;
+    }
+
+    .img_der {
         display: none;
     }
-    
-    .img_izq{
+
+    .img_izq {
         display: none;
     }
 
@@ -408,17 +411,17 @@ th {
     }
 
     .div_video {
-        border: none; 
+        border: none;
     }
-   
+
 }
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1199px) {
 
     .container_gral {
-        height: 80vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -435,13 +438,13 @@ th {
         align-items: center;
         align-content: center;
     }
-    
-    .titulo{
+
+    .titulo {
         font-family: "Rubik Wet Paint", system-ui;
         color: rgb(140, 148, 145);
         padding-top: 10px;
         font-style: oblique;
-        
+
     }
 
     .opc_nav {
@@ -449,17 +452,19 @@ th {
         padding: 0px 10px;
     }
 
-    .img_logoIzq{
-        height: 100px;   
-    }
-    .img_logoDer{
+    .img_logoIzq {
         height: 100px;
     }
-    .img_der{
+
+    .img_logoDer {
+        height: 100px;
+    }
+
+    .img_der {
         display: none;
     }
-    
-    .img_izq{
+
+    .img_izq {
         display: none;
     }
 
@@ -478,7 +483,7 @@ th {
     }
 
     .div_video {
-        border: none; 
+        border: none;
     }
 
     .parrafo_main {
@@ -486,15 +491,15 @@ th {
         margin: 0px;
         padding: 0px 100px;
     }
-   
+
 }
 
-@media screen and (max-width: 991px){
+@media screen and (max-width: 991px) {
 
     .container_gral {
-        height: 80vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -511,13 +516,13 @@ th {
         align-items: center;
         align-content: center;
     }
-    
-    .titulo{
+
+    .titulo {
         font-family: "Rubik Wet Paint", system-ui;
         color: rgb(140, 148, 145);
         padding-top: 10px;
         font-style: oblique;
-        
+
     }
 
     .opc_nav {
@@ -525,17 +530,19 @@ th {
         padding: 0px 10px;
     }
 
-    .img_logoIzq{
-        height: 100px;   
-    }
-    .img_logoDer{
+    .img_logoIzq {
         height: 100px;
     }
-    .img_der{
+
+    .img_logoDer {
+        height: 100px;
+    }
+
+    .img_der {
         display: none;
     }
-    
-    .img_izq{
+
+    .img_izq {
         display: none;
     }
 
@@ -554,7 +561,7 @@ th {
     }
 
     .div_video {
-        border: none; 
+        border: none;
     }
 
     .parrafo_main {
@@ -562,15 +569,15 @@ th {
         margin: 0px;
         padding: 0px 100px;
     }
-   
+
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
 
     .container_gral {
-        height: 80vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -587,13 +594,13 @@ th {
         align-items: center;
         align-content: center;
     }
-    
-    .titulo{
+
+    .titulo {
         font-family: "Rubik Wet Paint", system-ui;
         color: rgb(140, 148, 145);
         padding-top: 10px;
         font-style: oblique;
-        
+
     }
 
     .opc_nav {
@@ -601,18 +608,20 @@ th {
         padding: 0px 10px;
     }
 
-    .img_logoIzq{
-        height: 100px; 
+    .img_logoIzq {
+        height: 100px;
     }
-    .img_logoDer{
+
+    .img_logoDer {
         height: 100px;
         display: none;
     }
-    .img_der{
+
+    .img_der {
         display: none;
     }
-    
-    .img_izq{
+
+    .img_izq {
         display: none;
     }
 
@@ -631,7 +640,7 @@ th {
     }
 
     .div_video {
-        border: none; 
+        border: none;
     }
 
     .parrafo_main {
@@ -639,15 +648,15 @@ th {
         margin: 0px;
         padding: 0px 100px;
     }
-   
+
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
 
     .container_gral {
-        height: 80vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -664,13 +673,13 @@ th {
         align-items: center;
         align-content: center;
     }
-    
-    .titulo{
+
+    .titulo {
         font-family: "Rubik Wet Paint", system-ui;
         color: rgb(140, 148, 145);
         padding-top: 10px;
         font-style: oblique;
-        
+
     }
 
     .opc_nav {
@@ -678,18 +687,20 @@ th {
         padding: 0px 10px;
     }
 
-    .img_logoIzq{
-        height: 100px; 
+    .img_logoIzq {
+        height: 100px;
     }
-    .img_logoDer{
+
+    .img_logoDer {
         height: 100px;
         display: none;
     }
-    .img_der{
+
+    .img_der {
         display: none;
     }
-    
-    .img_izq{
+
+    .img_izq {
         display: none;
     }
 
@@ -708,7 +719,7 @@ th {
     }
 
     .div_video {
-        border: none; 
+        border: none;
     }
 
     .parrafo_main {
@@ -718,12 +729,12 @@ th {
     }
 }
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 480px) {
 
     .container_gral {
-        height: 80vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -740,13 +751,13 @@ th {
         align-items: center;
         align-content: center;
     }
-    
-    .titulo{
+
+    .titulo {
         font-family: "Rubik Wet Paint", system-ui;
         color: rgb(140, 148, 145);
         padding-top: 10px;
         font-style: oblique;
-        
+
     }
 
     .opc_nav {
@@ -754,18 +765,20 @@ th {
         padding: 0px 10px;
     }
 
-    .img_logoIzq{
-        height: 100px; 
+    .img_logoIzq {
+        height: 100px;
     }
-    .img_logoDer{
+
+    .img_logoDer {
         height: 100px;
         display: none;
     }
-    .img_der{
+
+    .img_der {
         display: none;
     }
-    
-    .img_izq{
+
+    .img_izq {
         display: none;
     }
 
@@ -784,7 +797,7 @@ th {
     }
 
     .div_video {
-        border: none; 
+        border: none;
     }
 
     .parrafo_main {
@@ -794,12 +807,12 @@ th {
     }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
 
     .container_gral {
-        height: 80vh;
+        height: 100vh;
         display: grid;
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
         grid-auto-columns: 1fr;
         gap: 5px 5px;
@@ -816,13 +829,13 @@ th {
         align-items: center;
         align-content: center;
     }
-    
-    .titulo{
+
+    .titulo {
         font-family: "Rubik Wet Paint", system-ui;
         color: rgb(140, 148, 145);
         padding-top: 10px;
         font-style: oblique;
-        
+
     }
 
     .opc_nav {
@@ -830,18 +843,20 @@ th {
         padding: 0px 10px;
     }
 
-    .img_logoIzq{
-        height: 100px; 
+    .img_logoIzq {
+        height: 100px;
     }
-    .img_logoDer{
+
+    .img_logoDer {
         height: 100px;
         display: none;
     }
-    .img_der{
+
+    .img_der {
         display: none;
     }
-    
-    .img_izq{
+
+    .img_izq {
         display: none;
     }
 
@@ -860,7 +875,7 @@ th {
     }
 
     .div_video {
-        border: none; 
+        border: none;
     }
 
     .parrafo_main {
@@ -868,8 +883,9 @@ th {
         margin: 0px;
         padding: 0px 100px;
     }
-   
+
+    .footer{
+        padding: 50px;
+    }
+
 }
-
-
-
