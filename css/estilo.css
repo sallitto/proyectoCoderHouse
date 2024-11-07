@@ -15,7 +15,6 @@ body {
     background-size: cover;
     background-attachment: fixed;
     justify-content: center;
-    margin: 0px 20px;
 }
 
 /* ----- ESTILO GRID ----- */
@@ -189,6 +188,8 @@ footer {
 
 .video_index {
     border-radius: 5%;
+    width:  560px;
+    height: 315px;
 }
 
 .div_parrafo {
@@ -481,12 +482,6 @@ th {
         border: none;
     }
 
-    .parrafo_main {
-        font-size: large;
-        margin: 0px;
-        padding: 0px 100px;
-    }
-
 }
 
 @media screen and (max-width: 991px) {
@@ -553,12 +548,6 @@ th {
 
     .div_video {
         border: none;
-    }
-
-    .parrafo_main {
-        font-size: large;
-        margin: 0px;
-        padding: 0px 100px;
     }
 
 }
@@ -630,12 +619,6 @@ th {
         border: none;
     }
 
-    .parrafo_main {
-        font-size: large;
-        margin: 0px;
-        padding: 0px 100px;
-    }
-
 }
 
 @media screen and (max-width: 600px) {
@@ -705,11 +688,19 @@ th {
         border: none;
     }
 
-    .parrafo_main {
-        font-size: large;
-        margin: 0px;
-        padding: 0px 100px;
+    .div_parrafo{
+        margin: 0;
     }
+
+    .video_index {
+        width: 380px;
+        height: 250px;
+    }
+
+    footer{
+        padding: 5px;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -779,11 +770,19 @@ th {
         border: none;
     }
 
-    .parrafo_main {
-        font-size: large;
-        margin: 0px;
-        padding: 0px 100px;
+    .div_parrafo{
+        margin: 0;
     }
+
+    .video_index {
+        width: 380px;
+        height: 250px;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
 }
 
 @media screen and (max-width: 320px) {
@@ -853,10 +852,17 @@ th {
         border: none;
     }
 
-    .parrafo_main {
-        font-size: large;
-        margin: 0px;
-        padding: 0px 100px;
+    .div_parrafo{
+        margin: 0;
+    }
+    
+    .video_index {
+        width: 380px;
+        height: 250px;
+    }
+
+    footer{
+        padding: 10px;
     }
 
 }
