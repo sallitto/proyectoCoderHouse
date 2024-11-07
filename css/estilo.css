@@ -15,12 +15,11 @@ body {
     background-size: cover;
     background-attachment: fixed;
     justify-content: center;
-    height: 100vh;
 }
 
 /* ----- ESTILO GRID ----- */
 
-.container_gral {
+.contenedor_gral {
     height: 100vh;
     display: grid;
     grid-template-columns: 0.1fr 3fr 0.1fr;
@@ -193,7 +192,7 @@ footer {
     flex-direction: column;
     align-items: center;
     overflow: auto;
-    justify-content: baseline;
+    justify-content: center;
 }
 
 .parrafo_main {
@@ -252,7 +251,8 @@ th {
 /* ----- ESTILO COMPONENTES MAIN ( SECCION MAPAS ) ----- */
 
 .div_listmaps {
-    align-content: center;
+   margin: 100px;
+   padding-right: 50px;
 }
 
 .form-check-input {
@@ -409,6 +409,7 @@ th {
         align-content: center;
         justify-content: space-between;
         padding: 20px;
+        margin: 20px;
     }
 
     .div_video {
@@ -481,6 +482,7 @@ th {
         align-content: center;
         justify-content: space-between;
         padding: 20px;
+        margin: 20px;
     }
 
     .div_video {
@@ -559,6 +561,7 @@ th {
         align-content: center;
         justify-content: space-between;
         padding: 20px;
+        margin: 20px;
     }
 
     .div_video {
@@ -638,6 +641,7 @@ th {
         align-content: center;
         justify-content: space-between;
         padding: 20px;
+        margin: 20px;
     }
 
     .div_video {
@@ -717,6 +721,7 @@ th {
         align-content: center;
         justify-content: space-between;
         padding: 20px;
+        margin: 20px;
     }
 
     .div_video {
@@ -795,6 +800,7 @@ th {
         align-content: center;
         justify-content: space-between;
         padding: 20px;
+        margin: 20px;
     }
 
     .div_video {
@@ -873,6 +879,7 @@ th {
         align-content: center;
         justify-content: space-between;
         padding: 20px;
+        margin: 20px;
     }
 
     .div_video {
