@@ -15,6 +15,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     justify-content: center;
+    margin: 0px 20px;
 }
 
 /* ----- ESTILO GRID ----- */
@@ -31,36 +32,43 @@ body {
         "nav nav nav"
         "div_izq main div_der"
         "footer footer footer";
+    margin: 0px 20px;
 }
 
 .header {
     grid-area: header;
-    background-color: rgba(255, 255, 255, 0)
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
 }
 
 .div_izq {
     grid-area: div_izq;
     background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
 }
 
 .nav_gral {
     grid-area: nav;
     background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
 }
 
 .div_der {
     grid-area: div_der;
     background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
 }
 
 .main {
     grid-area: main;
     background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
 }
 
 .footer {
     grid-area: footer;
-    background-color: rgba(255, 255, 255, 0)
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0px 20px;
 }
 
 /* ----- ESTILO HEADER ----- */
@@ -95,7 +103,7 @@ body {
     margin: 20px;
     display: flex;
     list-style: none;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -103,7 +111,6 @@ body {
     color: rgb(140, 148, 145);
     text-decoration: none;
     padding: 0.7rem;
-    margin-right: 100px;
     align-content: center;
     text-align: center;
 }
@@ -371,16 +378,6 @@ th {
 
     }
 
-    .nav_menu {
-        margin: 100px;
-        display: flex;
-        list-style: none;
-    }
-
-    .opc_nav {
-        margin-right: 60px;
-    }
-
     .img_logoIzq {
         height: 100px;
     }
@@ -447,11 +444,6 @@ th {
         padding-top: 10px;
         font-style: oblique;
 
-    }
-
-    .opc_nav {
-        margin-right: 60px;
-        padding: 0px 10px;
     }
 
     .img_logoIzq {
@@ -528,11 +520,6 @@ th {
 
     }
 
-    .opc_nav {
-        margin-right: 60px;
-        padding: 0px 10px;
-    }
-
     .img_logoIzq {
         height: 100px;
     }
@@ -605,11 +592,6 @@ th {
         padding-top: 10px;
         font-style: oblique;
 
-    }
-
-    .opc_nav {
-        margin-right: 60px;
-        padding: 0px 10px;
     }
 
     .img_logoIzq {
@@ -687,11 +669,6 @@ th {
 
     }
 
-    .opc_nav {
-        margin-right: 60px;
-        padding: 0px 10px;
-    }
-
     .img_logoIzq {
         height: 100px;
     }
@@ -766,11 +743,6 @@ th {
 
     }
 
-    .opc_nav {
-        margin-right: 60px;
-        padding: 0px 10px;
-    }
-
     .img_logoIzq {
         height: 100px;
     }
@@ -843,11 +815,6 @@ th {
         padding-top: 10px;
         font-style: oblique;
 
-    }
-
-    .opc_nav {
-        margin-right: 60px;
-        padding: 0px 10px;
     }
 
     .img_logoIzq {
