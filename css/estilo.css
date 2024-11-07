@@ -67,6 +67,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .titulo{
@@ -77,24 +78,33 @@ body {
     
 }
 
-.img_logo {
+.img_logoIzq {
 
     padding-top: 10px;
     height: 150px;
 }
 
+.img_logoDer {
+
+    padding-top: 10px;
+    height: 150px;
+}
 /* ----- ESTILO NAV ----- */
 .nav_menu {
-    margin: 50px;
+    margin: 20px;
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
 }
 
 .opc_nav {
     color: rgb(140, 148, 145);
     text-decoration: none;
     padding: 0.7rem;
+    margin-right: 100px;
+    align-content: center;
+    text-align: center;
 }
 
 .opc_nav:hover {
@@ -119,11 +129,12 @@ body {
     justify-content: space-around;
     color: rgb(140, 148, 145);
     padding: 20px;
+    justify-content: center;
 }
 
 /* ----- ESTILO FOOTER ----- */
 footer {
-    padding-top: 30px;
+    padding-top: 50px;
 }
 
 .h4_contacto {
@@ -181,6 +192,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 }
 
 .parrafo_main {
@@ -338,18 +350,68 @@ th {
         gap: 5px 5px;
         grid-template-areas:
             "header header header"
-            "div_izq nav div_der"
+            "nav nav nav"
             "main main main"
             "footer footer footer";
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .titulo{
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+        
     }
 
     .nav_menu {
         margin: 100px;
         display: flex;
         list-style: none;
-        justify-content: space-between;
+    }
+
+    .opc_nav {
+        margin-right: 60px;
+    }
+
+    .img_logoIzq{
+        height: 100px;   
+    }
+    .img_logoDer{
+        height: 100px;
+    }
+    .img_der{
+        display: none;
     }
     
+    .img_izq{
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .div_video {
+        border: none; 
+    }
+   
 }
 
 @media screen and (max-width: 1199px){
@@ -363,22 +425,50 @@ th {
         gap: 5px 5px;
         grid-template-areas:
             "header header header"
-            "div_izq nav div_der"
+            "nav nav nav"
             "main main main"
             "footer footer footer";
     }
 
-    .nav_menu {
-        margin: 100px;
+    .header {
         display: flex;
-        list-style: none;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .titulo{
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+        
+    }
+
+    .opc_nav {
+        margin-right: 60px;
+        padding: 0px 10px;
+    }
+
+    .img_logoIzq{
+        height: 100px;   
+    }
+    .img_logoDer{
+        height: 100px;
+    }
+    .img_der{
+        display: none;
+    }
+    
+    .img_izq{
+        display: none;
     }
 
     .main {
         display: grid;
         color: rgb(140, 148, 145);
         padding: 20px;
+        justify-content: center;
     }
 
     .div_listmaps {
@@ -390,6 +480,12 @@ th {
 
     .div_video {
         border: none; 
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
     }
    
 }
@@ -405,22 +501,50 @@ th {
         gap: 5px 5px;
         grid-template-areas:
             "header header header"
-            "div_izq nav div_der"
+            "nav nav nav"
             "main main main"
             "footer footer footer";
     }
 
-    .nav_menu {
-        margin: 100px;
+    .header {
         display: flex;
-        list-style: none;
-        justify-content: space-between;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .titulo{
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+        
+    }
+
+    .opc_nav {
+        margin-right: 60px;
+        padding: 0px 10px;
+    }
+
+    .img_logoIzq{
+        height: 100px;   
+    }
+    .img_logoDer{
+        height: 100px;
+    }
+    .img_der{
+        display: none;
+    }
+    
+    .img_izq{
+        display: none;
     }
 
     .main {
         display: grid;
         color: rgb(140, 148, 145);
         padding: 20px;
+        justify-content: center;
     }
 
     .div_listmaps {
@@ -434,18 +558,88 @@ th {
         border: none; 
     }
 
-    .img_izq{
-        height: 150px;
-    }
-
-    .img_der{
-        height: 150px;
-    }
-
-    .img_logo {
-
-        padding-top: 20px;
-        height: 130px;
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
     }
    
 }
+
+@media screen and (max-width: 767px){
+
+    .container_gral {
+        height: 50vh;
+        display: grid;
+        grid-template-columns: 0.1fr 3fr 0.1fr; 
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-auto-columns: 1fr;
+        gap: 5px 5px;
+        grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "main main main"
+            "footer footer footer";
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+    }
+    
+    .titulo{
+        font-family: "Rubik Wet Paint", system-ui;
+        color: rgb(140, 148, 145);
+        padding-top: 10px;
+        font-style: oblique;
+        
+    }
+
+    .opc_nav {
+        margin-right: 60px;
+        padding: 0px 10px;
+    }
+
+    .img_logoIzq{
+        height: 100px; 
+    }
+    .img_logoDer{
+        height: 100px;
+        display: none;
+    }
+    .img_der{
+        display: none;
+    }
+    
+    .img_izq{
+        display: none;
+    }
+
+    .main {
+        display: grid;
+        color: rgb(140, 148, 145);
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        align-content: center;
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    .div_video {
+        border: none; 
+    }
+
+    .parrafo_main {
+        font-size: large;
+        margin: 0px;
+        padding: 0px 100px;
+    }
+   
+}
+
