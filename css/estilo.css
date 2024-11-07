@@ -14,13 +14,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    align-items: center;
+    justify-content: center;
 }
 
 /* ----- ESTILO GRID ----- */
 
 .container_gral {
-    height: 80vh;
+    height: 100vh;
     display: grid;
     grid-template-columns: 0.1fr 3fr 0.1fr; 
     grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
@@ -176,8 +176,6 @@ footer {
     text-align: center;
     margin: 50px;
     padding: 10px;
-    border:  solid 2px rgb(140, 148, 145);
-    border-radius: 5%;
 
 }
 
@@ -193,6 +191,7 @@ footer {
     flex-direction: column;
     align-items: center;
     overflow: auto;
+    justify-content: center;
 }
 
 .parrafo_main {
@@ -342,7 +341,7 @@ th {
 @media screen and (max-width: 1399px){
 
     .container_gral {
-        height: 50vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
@@ -417,7 +416,7 @@ th {
 @media screen and (max-width: 1199px){
 
     .container_gral {
-        height: 50vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
@@ -493,7 +492,7 @@ th {
 @media screen and (max-width: 991px){
 
     .container_gral {
-        height: 50vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
@@ -569,7 +568,7 @@ th {
 @media screen and (max-width: 768px){
 
     .container_gral {
-        height: 50vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
@@ -646,7 +645,7 @@ th {
 @media screen and (max-width: 600px){
 
     .container_gral {
-        height: 50vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
@@ -722,7 +721,7 @@ th {
 @media screen and (max-width: 480px){
 
     .container_gral {
-        height: 50vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
@@ -798,7 +797,7 @@ th {
 @media screen and (max-width: 320px){
 
     .container_gral {
-        height: 50vh;
+        height: 80vh;
         display: grid;
         grid-template-columns: 1fr; 
         grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
