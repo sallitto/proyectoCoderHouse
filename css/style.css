@@ -321,5 +321,11 @@ body {
     margin: 0px;
   }
 }
+@media screen and (max-width: 600px) {
+  .main .div_video .video_index {
+    width: 370px;
+    height: 250px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
