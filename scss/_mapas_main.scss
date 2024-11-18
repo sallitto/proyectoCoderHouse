@@ -1,0 +1,35 @@
+.main {
+    .div_listmaps {
+        margin: 100px;
+        padding-right: 50px;
+
+        .form-check-input {
+            background-color: rgba(7, 7, 7, 0.932);
+
+            &:checked {
+                background-color: rgb(140, 148, 145);
+                border-color: rgb(140, 148, 145);
+            }
+        }
+    }
+
+    .div_mapas {
+
+        height: 450px;
+        width: 450px;
+        overflow: auto;
+        text-align: center;
+
+        .img_mapas {
+
+            border: 2px double gray;
+            opacity: 0.4;
+
+            &:hover {
+                border: solid rgb(140, 148, 145);
+                opacity: 1;
+                border-radius: 10px;
+            }
+        }
+    }
+}

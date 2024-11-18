@@ -1,0 +1,142 @@
+$color_fondo: rgba(255, 255, 255, 0);
+$color_principal: rgb(140, 148, 145);
+
+
+
+.contenedor_gral {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+    grid-auto-columns: 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "div_izq main div_der"
+        "footer footer footer";
+    margin: 0px 20px;
+
+    .header {
+        grid-area: header;
+        background-color: $color_fondo;
+        margin: 0px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .titulo {
+            font-family: "Rubik Wet Paint", system-ui;
+            color: $color_principal;
+            padding-top: 50px;
+            font-style: oblique;
+        }
+
+        .img_logoIzq {
+            padding-top: 10px;
+            height: 150px;
+        }
+
+        .img_logoDer {
+            padding-top: 10px;
+            height: 150px;
+        }
+    }
+
+    .div_izq {
+        grid-area: div_izq;
+        background-color: $color_fondo;
+        margin: 0px 20px;
+        align-content: center;
+        justify-self: center;
+    }
+
+    .nav_gral {
+        grid-area: nav;
+        background-color: $color_fondo;
+        margin: 0px 20px;
+
+        .nav_menu {
+            margin: 20px;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            align-items: center;
+
+            .item_menu {
+                .opc_nav {
+                    color: $color_principal;
+                    text-decoration: none;
+                    padding: 0.7rem;
+                    align-content: center;
+                    text-align: center;
+                }
+
+                .opc_nav:hover {
+                    background-color: $color_principal;
+                    color: black;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+    }
+
+    .div_der {
+        grid-area: div_der;
+        background-color: $color_fondo;
+        margin: 0px 20px;
+        align-content: center;
+        justify-self: center;
+    }
+
+    .main {
+        grid-area: main;
+        background-color: $color_fondo;
+        display: flex;
+        justify-content: space-around;
+        color: $color_principal;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .footer {
+        grid-area: footer;
+        background-color: $color_fondo;
+        margin: 0px 20px;
+
+        .h4_contacto {
+            color: $color_principal;
+            text-align: center;
+        }
+
+        .h5_copy {
+            color: $color_principal;
+            text-align: center;
+            font-size: x-small;
+        }
+
+        .contenido-contacto {
+            text-align: center;
+
+            i {
+                color: $color_principal;
+                display: inline-block;
+                text-decoration: none;
+                border: 1px solid $color_principal;
+                border-radius: 100%;
+                width: 42px;
+                height: 42px;
+                line-height: 42px;
+                margin: 10px 5px;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: $color_principal;
+                    color: black;
+                }
+
+            }
+        }
+    }
+}

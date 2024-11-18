@@ -1,0 +1,96 @@
+@media screen and (max-width: 1399px) {
+
+    .container_gral {
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.2fr 3fr 0.4fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+
+    }
+
+
+    .div_der {
+        display: none;
+    }
+
+    .div_izq {
+        display: none;
+    }
+
+    .footer {
+        padding-top: 50px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div_listmaps {
+        display: flex;
+        flex-direction: row;
+
+
+        .form-check {
+            padding-left: 3em;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    .contenedor_gral {
+
+        margin: 0px;
+
+        .header {
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            .img_logoDer {
+                display: none;
+            }
+
+            .img_logoIzq {
+
+                height: 100px;
+            }
+
+            .titulo {
+                padding-top: 0px;
+            }
+        }
+
+        .nav_gral {
+
+            margin: 0px;
+
+            .nav_menu {
+                margin: 0px;
+                align-items: center;
+                flex-direction: column;
+                padding-left: 0rem;
+            }
+        }
+
+        .main {
+            padding: 0px;
+        }
+
+        .footer {
+            margin: 0px;
+        }
+    }
+}

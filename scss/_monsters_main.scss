@@ -1,0 +1,21 @@
+.main {
+
+    .div_monsters {
+        text-align: center;
+
+        .tabla_monsters {
+
+            .td_monsters {
+                font-family: "Kanit", serif;
+                border: solid 1px rgb(140, 148, 145);
+                margin: auto;
+                padding: 5px;
+
+                &:hover {
+                    background-color: rgba(177, 165, 165, 0.39);
+                    color: black;
+                }
+            }
+        }
+    }
+}

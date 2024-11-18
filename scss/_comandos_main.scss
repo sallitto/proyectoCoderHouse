@@ -1,0 +1,54 @@
+.main {
+
+    .div_comandos {
+        align-content: center;
+        margin-left: 10px;
+
+        .tabla_comandos {
+            border: solid 1px rgb(140, 148, 145);
+            padding: 0px;
+            margin: 0px auto;
+
+
+            tr {
+                th {
+                    font-family: "Kanit", serif;
+                    border: solid 1px rgb(140, 148, 145);
+                    text-align: center;
+                }
+
+                .td_comandos {
+                    font-family: "Kanit", serif;
+                    border: solid 1px rgb(140, 148, 145);
+                    text-align: center;
+
+                    .p_globalchat {
+                        color: #ff8284;
+                    }
+                
+                    .p_citychat {
+                        color: #8482ff;
+                    }
+                
+                    .p_guildchat {
+                        color: #b5ffb5;
+                    }
+                
+                    .p_partychat {
+                        color: #e6e784;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
