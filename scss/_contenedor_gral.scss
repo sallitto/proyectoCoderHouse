@@ -2,7 +2,6 @@ $color_fondo: rgba(255, 255, 255, 0);
 $color_principal: rgb(140, 148, 145);
 
 
-
 .contenedor_gral {
     height: 100vh;
     display: grid;
@@ -94,7 +93,6 @@ $color_principal: rgb(140, 148, 145);
         grid-area: main;
         background-color: $color_fondo;
         display: flex;
-        justify-content: space-around;
         color: $color_principal;
         padding: 20px;
         justify-content: center;
