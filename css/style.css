@@ -309,6 +309,10 @@ body {
   }
 }
 @media screen and (max-width: 1199px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
   .main .div_parrafo {
     margin: 0px 50px;
   }
