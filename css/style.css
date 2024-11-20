@@ -15,6 +15,7 @@ body {
   justify-content: center;
 }
 
+/*Utilizacion de variables*/
 .contenedor_gral {
   height: 100vh;
   display: grid;
@@ -252,6 +253,7 @@ body {
   color: black;
 }
 
+/*Utlizacion de mixin*/
 .main .item_regla {
   font-family: "Nunito", serif;
   list-style-type: upper-roman;
@@ -266,7 +268,7 @@ body {
 .main .accordion .accordion-item {
   align-items: center;
   color: rgb(140, 148, 145);
-  background-color: rgba(255, 255, 255, 0);
+  background-color: transparent;
   border: none;
 }
 .main .accordion .accordion-item .accordion-button {
@@ -319,6 +321,8 @@ body {
   .div_listmaps {
     display: flex;
     flex-direction: row;
+    padding-left: 30px;
+    margin: 40px;
   }
   .div_listmaps .form-check {
     padding-left: 3em;
@@ -350,6 +354,10 @@ body {
     align-items: center;
     flex-direction: column;
     padding-left: 0rem;
+  }
+  .contenedor_gral .nav_gral .nav_menu .item_menu .opc_nav:hover {
+    background-color: transparent;
+    border-radius: 10px;
   }
   .contenedor_gral .main {
     padding: 0px;

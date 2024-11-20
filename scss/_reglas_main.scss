@@ -1,3 +1,9 @@
+/*Utlizacion de mixin*/
+
+@mixin colorFondo($color){
+    background-color: $color;
+}
+
 .main {
 
     .item_regla {
@@ -15,17 +21,17 @@
         .accordion-item {
             align-items: center;
             color: rgb(140, 148, 145);
-            background-color: rgba(255, 255, 255, 0);
+            @include colorFondo(transparent);
             border: none;
 
             .accordion-button {
                 color: rgba(7, 7, 7, 0.932);
-                background-color: rgb(140, 148, 145);
+                @include colorFondo( rgb(140, 148, 145));
                 border: none;
 
                 &:not(.collapsed) {
                     color: rgba(7, 7, 7, 0.932);
-                    background-color: rgb(140, 148, 145);
+                    @include colorFondo( rgb(140, 148, 145));
                     box-shadow: rgb(140, 148, 145);
                 }
             }

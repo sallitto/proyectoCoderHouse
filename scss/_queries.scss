@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 1199px) {
 
-    .main{
+    .main {
 
         flex-direction: column;
         align-items: center;
@@ -61,7 +61,7 @@
             margin: 0px 50px;
         }
     }
-    
+
 
     .div_listmaps {
         display: flex;
@@ -77,8 +77,6 @@
 }
 
 @media screen and (max-width: 768px) {
-
-
 
     .contenedor_gral {
 
@@ -112,6 +110,15 @@
                 align-items: center;
                 flex-direction: column;
                 padding-left: 0rem;
+
+                .item_menu {
+                    .opc_nav {}
+
+                    .opc_nav:hover {
+                        background-color: transparent;
+                        border-radius: 10px;
+                    }
+                }
             }
         }
 
