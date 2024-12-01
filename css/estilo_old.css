@@ -50,6 +50,8 @@ body {
     grid-area: nav;
     background-color: rgba(255, 255, 255, 0);
     margin: 0px 20px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .div_der {
@@ -101,8 +103,8 @@ body {
 .nav_menu {
     margin: 20px;
     display: flex;
+    gap: 100px;
     list-style: none;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -118,6 +120,20 @@ body {
     background-color: rgb(140, 148, 145);
     color: black;
     border-radius: 20px;
+}
+
+
+.burger{
+
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: gray;
+        margin: 5px 0;
+    }
 }
 
 /* ----- ESTILO DIV DERECHO ----- */
@@ -563,9 +579,25 @@ th {
         padding: 0;
     }
 
+    .nav_gral{
+        position: relative;
+        justify-content: end;
+    }
+
+    .burger{
+        display: flex;
+    }
     .nav_menu {
-        flex-direction: column;
-        padding: 2rem;
+            display: none;
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            top: 100%;
+    }
+
+    .nav_menu.active{
+        padding: 0px;
+        display: flex;
     }
 
     .titulo {

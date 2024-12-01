@@ -16,7 +16,9 @@
         rel="stylesheet">
     <!--<link rel="stylesheet" href="./css/estilo.css">-->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Helbreath</title>
+    <meta name="keywords" content="Helbreath, Mmorpg, HB server, server, Free Online Game, Free, PVP, HB">
+    <meta name="description" content="Helbreath - Balanced action MMORPG, updated frequently, and lots of fun events.">
+    <title>Helbreath - Monsters</title>
 </head>
 
 <body>
@@ -38,6 +40,11 @@
                 </li>
                 <li class="item_menu"><a class="opc_nav" href="../pages/reglas.html">Rules</a></li>
             </ul>
+            <div class="burger" aria-label="abrir menu de navegacion">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
         <div class="div_der">
             <img class="img_der animate__animated animate__bounceInRight" src="../img/ares.png" alt="personaje_aresden">
@@ -138,6 +145,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+        <script>
+            const burger = document.querySelector(".burger")
+            const nav_menu = document.querySelector(".nav_menu")
+    
+            burger.addEventListener("click", () =>{
+                nav_menu.classList.toggle("active");
+            })
+    
+            
+        </script>
 </body>
 
 </html>

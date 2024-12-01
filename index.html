@@ -12,17 +12,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Protest+Strike&family=Rubik+Wet+Paint&display=swap"
         rel="stylesheet">
-    <!--<link rel="stylesheet" href="./css/estilo.css">-->
+    <!--<link rel="stylesheet" href="./css/estilo_old.css">-->
     <link rel="stylesheet" href="./css/style.css">
+    <meta name="keywords" content="Helbreath, Mmorpg, HB server, server, Free Online Game, Free, PVP, HB">
+    <meta name="description" content="Helbreath - Balanced action MMORPG, updated frequently, and lots of fun events.">
+    <link rel="icon" href="./img/logo.ico">
     <title>Helbreath</title>
 </head>
 
 <body>
     <div class="contenedor_gral">
         <header class="header">
-            <img class="img_logoIzq" src="./img/logo.png" alt="logo">
-            <h1 class="titulo animate__animated animate__backInDown">HELBREATH</h1>
-            <img class="img_logoDer" src="./img/logo.png" alt="logo">
+            <img class="img_logoIzq" src="./img/logo.png" alt="logo_helbreath">
+            <h1 class="titulo animate__animated animate__backInDown" href="#">HELBREATH</h1>
+            <img class="img_logoDer" src="./img/logo.png" alt="logo_helbreath">
         </header>
         <div class="div_izq">
             <img class="img_izq animate__animated animate__bounceInLeft" src="./img/elv.png" alt="personaje_elvine">
@@ -36,6 +39,11 @@
                 </li>
                 <li class="item_menu"><a class="opc_nav" href="./pages/reglas.html">Rules</a></li>
             </ul>
+            <div class="burger" aria-label="abrir menu de navegacion">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
         <div class="div_der">
             <img class="img_der animate__animated animate__bounceInRight" src="./img/ares.png" alt="personaje_aresden">
@@ -76,6 +84,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        const burger = document.querySelector(".burger")
+        const nav_menu = document.querySelector(".nav_menu")
+
+        burger.addEventListener("click", () =>{
+            nav_menu.classList.toggle("active");
+        })
+
+        
+    </script>
 </body>
 
 </html>

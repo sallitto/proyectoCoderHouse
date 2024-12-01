@@ -20,19 +20,19 @@
 
         .accordion-item {
             align-items: center;
-            color: rgb(140, 148, 145);
+            color:  rgb(28, 218, 231);
             @include colorFondo(transparent);
             border: none;
 
             .accordion-button {
-                color: rgba(7, 7, 7, 0.932);
-                @include colorFondo( rgb(140, 148, 145));
+                color: rgb(28, 218, 231);
+                @include colorFondo(  gray);
                 border: none;
 
                 &:not(.collapsed) {
-                    color: rgba(7, 7, 7, 0.932);
-                    @include colorFondo( rgb(140, 148, 145));
-                    box-shadow: rgb(140, 148, 145);
+                    color: rgb(28, 218, 231);
+                    @include colorFondo(  gray);
+                    box-shadow:  gray;
                 }
             }
         }

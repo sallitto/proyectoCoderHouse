@@ -62,6 +62,10 @@
         }
     }
 
+    .contenedor_gral .nav_gral .nav_menu{
+        gap: 50px;
+    }
+
 
     .div_listmaps {
         display: flex;
@@ -102,25 +106,28 @@
         }
 
         .nav_gral {
+            position: relative;
+            justify-content: end;
 
-            margin: 0px;
+            .burger {
+                display: flex;
+            }
 
             .nav_menu {
-                margin: 0px;
-                align-items: center;
+                display: none;
                 flex-direction: column;
-                padding-left: 0rem;
+                gap: 15px;
+                width: 100%;
+                top: 100%;
+            }
 
-                .item_menu {
-                    .opc_nav {}
-
-                    .opc_nav:hover {
-                        background-color: transparent;
-                        border-radius: 10px;
-                    }
-                }
+            .nav_menu.active {
+                padding: 0px;
+                display: flex;
             }
         }
+
+
 
         .main {
             padding: 0px;

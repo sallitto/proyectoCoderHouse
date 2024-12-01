@@ -15,7 +15,9 @@
         rel="stylesheet">
     <!--<link rel="stylesheet" href="./css/estilo.css">-->
     <link rel="stylesheet" href="../css/style.css">
-    <title>Helbreath</title>
+    <meta name="keywords" content="Helbreath, Mmorpg, HB server, server, Free Online Game, Free, PVP, HB">
+    <meta name="description" content="Helbreath - Balanced action MMORPG, updated frequently, and lots of fun events.">
+    <title>Helbreath - Maps</title>
 </head>
 
 <body>
@@ -37,6 +39,11 @@
                 </li>
                 <li class="item_menu"><a class="opc_nav" href="../pages/reglas.html">Rules</a></li>
             </ul>
+            <div class="burger" aria-label="abrir menu de navegacion">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
         </nav>
         <div class="div_der">
             <img class="img_der animate__animated animate__bounceInRight" src="../img/ares.png" alt="personaje_aresden">
@@ -120,12 +127,12 @@
                 <br>
                 <section id="maps_others">
                     <h3>Others</h3>
-                    <img class="img_mapas" src="../img/maps/Arena1.png" alt="Arena1">
-                    <img class="img_mapas" src="../img/maps/Arena_4.png" alt="Arena4">
-                    <img class="img_mapas" src="../img/maps/Arena5.png" alt="Arena5">
-                    <img class="img_mapas" src="../img/maps/Arena6.png" alt="Arena6">
-                    <img class="img_mapas" src="../img/maps/Arena7.png" alt="Arena7">
-                    <img class="img_mapas" src="../img/maps/Arena8.png" alt="Arena8">
+                    <img class="img_mapas" src="../img/maps/Arena1.png" alt="Arena_Coliseo">
+                    <img class="img_mapas" src="../img/maps/Arena_4.png" alt="Arena_Estrella">
+                    <img class="img_mapas" src="../img/maps/Arena5.png" alt="Arena_Dungeon>
+                    <img class=" img_mapas" src="../img/maps/Arena6.png" alt="Arena_Beginnerzone">
+                    <img class="img_mapas" src="../img/maps/Arena7.png" alt="Arena">
+                    <img class="img_mapas" src="../img/maps/Arena8.png" alt="Arena_Castleoutside">
                     <img class="img_mapas" src="../img/maps/Castleinside.png" alt="Castleinside">
                     <img class="img_mapas" src="../img/maps/Castleoutside.png" alt="Castleoutside">
                     <img class="img_mapas" src="../img/maps/Battlefield.png" alt="Battlefield">
@@ -147,10 +154,14 @@
                 <h4 class="h4_contacto">Contact</h4>
             </div>
             <div class="contenido-contacto">
-                <a class="a_contacto" target="_blank" href="https://web.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a class="a_contacto" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                <a class="a_contacto" target="_blank" href="https://mail.google.com/"><i class="fa-regular fa-at"></i></a>
-                <a class="a_contacto" target="_blank" href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="a_contacto" target="_blank" href="https://web.facebook.com/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="a_contacto" target="_blank" href="https://www.instagram.com/"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="a_contacto" target="_blank" href="https://mail.google.com/"><i
+                        class="fa-regular fa-at"></i></a>
+                <a class="a_contacto" target="_blank" href="https://x.com/?lang=es"><i
+                        class="fa-brands fa-x-twitter"></i></a>
                 <script src="https://kit.fontawesome.com/1ec18c9726.js" crossorigin="anonymous"></script>
             </div>
             <div>
@@ -163,6 +174,16 @@
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script> AOS.init(); </script>
+    <script>
+        const burger = document.querySelector(".burger")
+        const nav_menu = document.querySelector(".nav_menu")
+
+        burger.addEventListener("click", () => {
+            nav_menu.classList.toggle("active");
+        })
+
+
+    </script>
 </body>
 
 </html>
