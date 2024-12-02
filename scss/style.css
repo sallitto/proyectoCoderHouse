@@ -194,6 +194,16 @@ body {
   }
 }
 
+.main .form {
+  align-content: center;
+  text-align: center;
+}
+.main .form .btn {
+  background-color: gray;
+  color: rgb(28, 218, 231);
+  border-color: gray;
+}
+
 .main .div_comandos {
   align-content: center;
   margin-left: 10px;

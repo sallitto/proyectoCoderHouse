@@ -26,7 +26,6 @@ body {
   grid-template-areas: "header header header" "nav nav nav" "div_izq main div_der" "footer footer footer";
   margin: 0px 20px;
 }
-
 .contenedor_gral .header {
   grid-area: header;
   background-color: rgba(255, 255, 255, 0);
@@ -35,24 +34,20 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
 .contenedor_gral .header .titulo {
   font-family: "Rubik Wet Paint", system-ui;
   color: rgb(28, 218, 231);
   padding-top: 50px;
   font-style: oblique;
 }
-
 .contenedor_gral .header .img_logoIzq {
   padding-top: 10px;
   height: 150px;
 }
-
 .contenedor_gral .header .img_logoDer {
   padding-top: 10px;
   height: 150px;
 }
-
 .contenedor_gral .div_izq {
   grid-area: div_izq;
   background-color: rgba(255, 255, 255, 0);
@@ -60,7 +55,6 @@ body {
   align-content: center;
   justify-self: center;
 }
-
 .contenedor_gral .nav_gral {
   grid-area: nav;
   background-color: rgba(255, 255, 255, 0);
@@ -68,7 +62,6 @@ body {
   display: flex;
   justify-content: space-around;
 }
-
 .contenedor_gral .nav_gral .nav_menu {
   margin: 20px;
   display: flex;
@@ -77,7 +70,6 @@ body {
   justify-content: space-around;
   align-items: center;
 }
-
 .contenedor_gral .nav_gral .nav_menu .item_menu .opc_nav {
   color: rgb(28, 218, 231);
   text-decoration: none;
@@ -85,26 +77,22 @@ body {
   align-content: center;
   text-align: center;
 }
-
 .contenedor_gral .nav_gral .nav_menu .item_menu .opc_nav:hover {
   background-color: rgb(28, 218, 231);
   color: black;
   border-radius: 20px;
 }
-
 .contenedor_gral .nav_gral .burger {
   flex-direction: column;
   cursor: pointer;
   display: none;
 }
-
 .contenedor_gral .nav_gral .burger .line {
   width: 30px;
   height: 3px;
   background-color: rgb(28, 218, 231);
   margin: 5px 0;
 }
-
 .contenedor_gral .div_der {
   grid-area: div_der;
   background-color: rgba(255, 255, 255, 0);
@@ -112,7 +100,6 @@ body {
   align-content: center;
   justify-self: center;
 }
-
 .contenedor_gral .main {
   grid-area: main;
   background-color: rgba(255, 255, 255, 0);
@@ -121,28 +108,23 @@ body {
   padding: 20px;
   justify-content: center;
 }
-
 .contenedor_gral .footer {
   grid-area: footer;
   background-color: rgba(255, 255, 255, 0);
   margin: 0px 20px;
 }
-
 .contenedor_gral .footer .h4_contacto {
   color: rgb(28, 218, 231);
   text-align: center;
 }
-
 .contenedor_gral .footer .h5_copy {
   color: rgb(28, 218, 231);
   text-align: center;
   font-size: x-small;
 }
-
 .contenedor_gral .footer .contenido-contacto {
   text-align: center;
 }
-
 .contenedor_gral .footer .contenido-contacto i {
   color: rgb(28, 218, 231);
   display: inline-block;
@@ -155,7 +137,6 @@ body {
   margin: 10px 5px;
   font-size: 20px;
 }
-
 .contenedor_gral .footer .contenido-contacto i:hover {
   background-color: rgb(28, 218, 231);
   color: black;
@@ -166,13 +147,11 @@ body {
   padding: 10px;
   align-content: center;
 }
-
 .main .div_video .video_index {
   border-radius: 5%;
   width: 560px;
   height: 315px;
 }
-
 .main .div_parrafo {
   color: rgb(28, 218, 231);
   padding: 10px;
@@ -182,11 +161,9 @@ body {
   overflow: auto;
   justify-content: center;
 }
-
 .main .div_parrafo .parrafo_main {
   font-size: large;
 }
-
 .main .div_parrafo .download {
   color: rgb(28, 218, 231);
   justify-self: baseline;
@@ -196,7 +173,6 @@ body {
   animation-iteration-count: infinite;
   animation-iteration-count: infinite;
 }
-
 @keyframes latido {
   0% {
     transform: scale(0);
@@ -217,41 +193,45 @@ body {
     transform: scale(0.5);
   }
 }
+
+.main .form {
+  align-content: center;
+  text-align: center;
+}
+.main .form .btn {
+  background-color: gray;
+  color: rgb(28, 218, 231);
+  border-color: gray;
+}
+
 .main .div_comandos {
   align-content: center;
   margin-left: 10px;
 }
-
 .main .div_comandos .tabla_comandos {
   border: solid 1px rgb(28, 218, 231);
   padding: 0px;
   margin: 0px auto;
 }
-
 .main .div_comandos .tabla_comandos tr th {
   font-family: "Kanit", serif;
   border: solid 1px rgb(28, 218, 231);
   text-align: center;
 }
-
 .main .div_comandos .tabla_comandos tr .td_comandos {
   font-family: "Kanit", serif;
   border: solid 1px rgb(28, 218, 231);
   text-align: center;
 }
-
 .main .div_comandos .tabla_comandos tr .td_comandos .p_globalchat {
   color: #ff8284;
 }
-
 .main .div_comandos .tabla_comandos tr .td_comandos .p_citychat {
   color: #8482ff;
 }
-
 .main .div_comandos .tabla_comandos tr .td_comandos .p_guildchat {
   color: #b5ffb5;
 }
-
 .main .div_comandos .tabla_comandos tr .td_comandos .p_partychat {
   color: #e6e784;
 }
@@ -260,28 +240,23 @@ body {
   margin: 100px;
   padding-right: 50px;
 }
-
 .main .div_listmaps .form-check-input {
   background-color: rgba(7, 7, 7, 0.932);
 }
-
 .main .div_listmaps .form-check-input:checked {
   background-color: rgb(28, 218, 231);
   border-color: rgb(28, 218, 231);
 }
-
 .main .div_mapas {
   height: 450px;
   width: 450px;
   overflow: auto;
   text-align: center;
 }
-
 .main .div_mapas .img_mapas {
   border: 2px double rgb(28, 218, 231);
   opacity: 0.4;
 }
-
 .main .div_mapas .img_mapas:hover {
   border: solid rgb(28, 218, 231);
   opacity: 1;
@@ -291,14 +266,12 @@ body {
 .main .div_monsters {
   text-align: center;
 }
-
 .main .div_monsters .tabla_monsters .td_monsters {
   font-family: "Kanit", serif;
   border: solid 1px rgb(28, 218, 231);
   margin: auto;
   padding: 5px;
 }
-
 .main .div_monsters .tabla_monsters .td_monsters:hover {
   background-color: rgba(177, 165, 165, 0.39);
   color: black;
@@ -311,26 +284,22 @@ body {
   margin: 0 20px;
   padding: 1px;
 }
-
 .main .accordion {
   text-align: center;
   align-content: center;
   border: none;
 }
-
 .main .accordion .accordion-item {
   align-items: center;
   color: rgb(28, 218, 231);
   background-color: transparent;
   border: none;
 }
-
 .main .accordion .accordion-item .accordion-button {
   color: rgb(28, 218, 231);
   background-color: gray;
   border: none;
 }
-
 .main .accordion .accordion-item .accordion-button:not(.collapsed) {
   color: rgb(28, 218, 231);
   background-color: gray;
@@ -442,6 +411,6 @@ body {
     padding-top: 20px;
     padding-bottom: 30px;
   }
-} 
+}
 
 /*# sourceMappingURL=style.css.map */
