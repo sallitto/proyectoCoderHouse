@@ -60,11 +60,11 @@
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Retype Confirm</label>
+                    <label for="exampleInputPassword1" class="form-label">Retype password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1">
                 </div>
-                <div class="mb-3">
-                <button type="submit" class="btn btn-primary">Create</button>
+                <button type="button" class="btn btn-lg btn-danger" data-bs-toggle="popover" data-bs-title="
+                Information!" data-bs-content="Account creation not available for now!">Create Account</button>
             </form>
 
         </main>
@@ -101,6 +101,10 @@
         })
 
 
+    </script>
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
 </body>
 

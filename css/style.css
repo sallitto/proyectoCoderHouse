@@ -297,6 +297,8 @@ body {
 }
 .main .accordion .accordion-item .accordion-button {
   color: rgb(28, 218, 231);
+  font-weight: bold;
+  border-bottom: gray;
   background-color: gray;
   border: none;
 }
@@ -355,6 +357,11 @@ body {
     padding-left: 3em;
   }
 }
+@media screen and (max-width: 900px) {
+  .contenedor_gral .nav_gral .nav_menu {
+    gap: 30px;
+  }
+}
 @media screen and (max-width: 768px) {
   .contenedor_gral {
     margin: 0px;
@@ -374,7 +381,7 @@ body {
     padding-top: 0px;
   }
   .contenedor_gral .nav_gral {
-    position: relative;
+    /* position: relative;*/
     justify-content: end;
   }
   .contenedor_gral .nav_gral .burger {

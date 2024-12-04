@@ -80,6 +80,12 @@
 
 }
 
+@media screen and (max-width: 900px) {
+    .contenedor_gral .nav_gral .nav_menu {
+        gap: 30px;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     .contenedor_gral {
@@ -106,19 +112,22 @@
         }
 
         .nav_gral {
-            position: relative;
+           /* position: relative;*/
             justify-content: end;
+            
 
             .burger {
                 display: flex;
             }
 
             .nav_menu {
+                
                 display: none;
                 flex-direction: column;
                 gap: 15px;
                 width: 100%;
                 top: 100%;
+                
 
             }
 

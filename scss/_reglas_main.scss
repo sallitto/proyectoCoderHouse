@@ -25,7 +25,9 @@
             border: none;
 
             .accordion-button {
-                color: rgb(28, 218, 231);
+                color:  rgb(28, 218, 231);
+                font-weight: bold;
+                border-bottom: gray;
                 @include colorFondo(  gray);
                 border: none;
 
