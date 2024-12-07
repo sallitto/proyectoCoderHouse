@@ -418,15 +418,44 @@ body {
     margin: 0px;
   }
 }
+@media screen and (max-width: 673px) {
+  .main .div_listmaps {
+    margin: 50px;
+  }
+}
 @media screen and (max-width: 600px) {
+  .main .div_video {
+    padding: 0px;
+  }
   .main .div_video .video_index {
     width: 370px;
     height: 250px;
+    padding: 0px;
   }
   .main .div_listmaps {
     margin: 0px;
     padding-top: 20px;
     padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 473px) {
+  .main .div_listmaps {
+    margin: 0px;
+    padding: 40px 0px;
+  }
+  .main .div_mapas {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main .div_video {
+    padding: 0px;
+  }
+  .main .div_video .video_index {
+    width: 340px;
+    height: 250px;
+    padding: 0px;
   }
 }
 
