@@ -15,7 +15,8 @@
     <!--<link rel="stylesheet" href="./css/estilo_old.css">-->
     <link rel="stylesheet" href="./css/style.css">
     <meta name="keywords" content="Helbreath, Mmorpg, HB server, server, Free Online Game, Free, PVP, HB">
-    <meta name="description" content="Helbreath - Balanced action MMORPG, updated frequently, and lots of fun events. A server as it was meant to be! Absolutely free!">
+    <meta name="description"
+        content="Helbreath - Balanced action MMORPG, updated frequently, and lots of fun events. A server as it was meant to be! Absolutely free!">
     <link rel="icon" href="./img/logo.ico">
     <title>Helbreath</title>
 </head>
@@ -61,19 +62,24 @@
                     Helbreath is an old-school medieval fantasy MMORPG with large scale open PvP and relaxing PvM.
                     Features include regular events, character build variety, enchanting, crafting, ...
                 </p>
-                <a class="download" href="#">PLAY NOW</a>
+                <a class="download" data-bs-toggle="popover" data-bs-title="
+                Information!" data-bs-content="Link not available at the moment!">PLAY NOW</a>
             </div>
-            
+
         </main>
         <footer class="footer footer_index">
             <div>
                 <h4 class="h4_contacto">Contact</h4>
             </div>
             <div class="contenido-contacto">
-                <a class="a_contacto" target="_blank" href="https://web.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                <a class="a_contacto" target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-                <a class="a_contacto" target="_blank" href="https://mail.google.com/"><i class="fa-regular fa-at"></i></a>
-                <a class="a_contacto" target="_blank" href="https://x.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                <a class="a_contacto" target="_blank" href="https://web.facebook.com/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="a_contacto" target="_blank" href="https://www.instagram.com/"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a class="a_contacto" target="_blank" href="https://mail.google.com/"><i
+                        class="fa-regular fa-at"></i></a>
+                <a class="a_contacto" target="_blank" href="https://x.com/?lang=es"><i
+                        class="fa-brands fa-x-twitter"></i></a>
                 <script src="https://kit.fontawesome.com/1ec18c9726.js" crossorigin="anonymous"></script>
             </div>
             <div>
@@ -89,11 +95,15 @@
         const burger = document.querySelector(".burger")
         const nav_menu = document.querySelector(".nav_menu")
 
-        burger.addEventListener("click", () =>{
+        burger.addEventListener("click", () => {
             nav_menu.classList.toggle("active");
         })
 
-        
+
+    </script>
+    <script> 
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     </script>
 </body>
 
