@@ -318,6 +318,7 @@ body {
   font-size: medium;
 }
 
+/*Implementacion medias queries*/
 @media screen and (max-width: 1490px) {
   .main_index {
     flex-direction: column;
